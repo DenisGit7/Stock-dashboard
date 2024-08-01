@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.div1 {
+  /* border: 6px black solid; */
+  height: auto;
+  grid-area: 1 / 1 / 2 / 6;
+}
+.div2 {
+  /* border: 6px blue solid; */
+  height: auto;
+  grid-area: 2 / 1 / 3 / 6;
+}
+.div3 {
+  /* border: 6px green solid; */
+  height: 100%;
+  width: 100%;
+
+  grid-area: 3 / 1 / 5 / 4;
+}
+.div4 {
+  /* border: 6px yellow solid; */
+  height: 100%;
+
+  grid-area: 3 / 4 / 5 / 5;
+}
+.div5 {
+  /* border: 6px orange solid; */
+  height: 100%;
+  grid-area: 3 / 5 / 5 / 6;
+  width: 100%;
+}
+.div6 {
+  /* border: 6px red solid; */
+  height: auto;
+  width: 100%;
+  grid-area: 5 / 1 / 6 / 6;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  align-items: flex-start;
+}
+.flex-container-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.flex-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 35vh;
+  height: fit-content;
+  flex-grow: 1;
+}
+.flex-btns {
+  color: #94a3b8;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 5vh;
+  height: 5vh;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.flex-btns:hover {
+  color: #bef264;
+  scale: 1.1;
+}
+
+.flex-btns.active {
+  color: #4d7c0f;
+}
