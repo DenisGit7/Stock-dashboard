@@ -16,7 +16,7 @@ const currentDate = dateFormat(today);
 
 // async function lastPrice(symbol) {
 //   const response = await fetch(
-//     `https://api.polygon.io/v2/snapshot/locale/us/markets/stocks/tickers/${symbol}?apiKey=ZJpxeHojXKi4rc3GOz5EDc0DuSBgsY2W`
+//     `https://api.polygon.io/v2/snapshot/locale/us/markets/stocks/tickers/${symbol}?apiKey=`
 //   );
 //   const price = await response.json();
 //   console.log(price.ticker.min.c);
